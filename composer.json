@@ -1,0 +1,84 @@
+{
+    "name": "laravel-doctor/laravel-doctor",
+    "description": "Comprehensive Laravel application diagnostics tool for detecting misconfigurations, security risks, and environment issues",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "diagnostics",
+        "health-check",
+        "monitoring",
+        "security",
+        "debugging",
+        "artisan",
+        "php"
+    ],
+    "homepage": "https://github.com/laravel-doctor/laravel-doctor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laravel Doctor Team",
+            "email": "team@laravel-doctor.com",
+            "homepage": "https://laravel-doctor.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2|^8.3",
+        "laravel/framework": "^9.0|^10.0|^11.0",
+        "illuminate/console": "^9.0|^10.0|^11.0",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/database": "^9.0|^10.0|^11.0",
+        "illuminate/redis": "^9.0|^10.0|^11.0",
+        "illuminate/mail": "^9.0|^10.0|^11.0",
+        "illuminate/http": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0",
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.0",
+        "nunomaduro/larastan": "^2.0"
+    },
+    "suggest": {
+        "friendsofphp/php-cs-fixer": "For code style checking and fixing",
+        "phpstan/phpstan": "For static analysis",
+        "nunomaduro/larastan": "Laravel-specific static analysis rules",
+        "predis/predis": "For Redis connectivity testing",
+        "guzzlehttp/guzzle": "For webhook notifications"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelDoctor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelDoctor\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelDoctor\\LaravelDoctorServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "format": "php-cs-fixer fix",
+        "analyse": "phpstan analyse",
+        "check": [
+            "@format",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
