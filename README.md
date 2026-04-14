@@ -539,7 +539,7 @@ This project is open-sourced software licensed under the [MIT license](LICENSE).
 
 - 📖 **Documentation**: [https://chisolution.io/docs](https://laravel-doctor.com/docs)
 - 💬 **Discord**: [Join our community](https://discord.gg/laravel-doctor)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/laravel-doctor/laravel-doctor/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/delan75/laravel-doctor/issues)
 - 📧 **Email**: info@chisolution@io
 
 ---
@@ -548,4 +548,4 @@ This project is open-sourced software licensed under the [MIT license](LICENSE).
 
 *Made with ❤️ by Chisolution*
 
-**&copy 2025, Work of Chisolution**
+**&copy 2024, Work of Chisolution**
